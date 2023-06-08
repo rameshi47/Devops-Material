@@ -84,3 +84,13 @@ then
 fi
 
 fi - if statement ends with fi
+
+#######################################################################################################################
+FOR LOOP
+
+for VARIABLE_NAME in ITEM_1 ITEM_N
+do
+  command 1
+  command 2
+  command N
+done
