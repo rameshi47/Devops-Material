@@ -1,0 +1,86 @@
+SHELL SCRIPTING
+
+######Basic#####
+
+#!bin/bash or #!/bin/csh or #!/bin/ksh or #!/bin/zsh - it is the path to the interpriter {shebang}
+
+if i not mention the shebang it woult take current shell
+
+we can use the normal command line in this script
+
+. - dot refer current directory
+
+$ - In a shell script, the dollar sign ($) is used to access the value of a variable. It is called variable expansion or substitution.
+
+
+############################################################################################################################################################
+
+VARIABLES
+
+Storage location that have a name
+Name-Value pairs
+
+Syntax:
+       VARIABLE_NAME="Value"
+	   
+Variables are case sensitive
+By convention variables are uppercase
+No space before or after equal =	   
+you can use variables in curly braces ${MY_SHELL} 
+shell script can start with letter and underscore but not start wih digits
+invalid: 
+		 3LETTERS="ABS"
+		 first-name="abd"
+		 first@name@sign="asv"
+
+##################################################################################################################################################################
+
+TESTS
+
+Syntax:
+		[ condition-to-test-for ]
+Example:
+		[-e /etc/passwd ]
+
+File operators(tests)
+
+			-d FILE True if file is a directory
+			-e FILE True if file exists
+			-f FILE True if file exists and is a regular file
+			-r FILE True if file is readable by you
+			-s FILE True if file exists and is not empty
+			-w FILE True if file is writable by you 
+			-x FILE True if the file is executable by you
+			
+String Operators(tests)
+
+			-z STRING True if string is empty
+			-n STRING True is string is not empty
+			STRING1=STRING2
+					True if the string are equal
+			STRING1!=STRING2
+					True if the string are not equal
+					
+Arithmetic operators(tests)
+
+			arg1 -eq arg2 True if arg1 is equal to arg2.
+			arg1 -ne arg2 True if arg1 is not equal to arg2.
+			
+			arg1 -lt arg2 True if arg1 is less then arg2.
+			arg1 -le arg2 True if arg1 is less then or equal to arg2.
+			
+			arg1 -gt arg2 True if arg1 is greater then arg2.
+			arg1 -ge arg2 True if arg1 is greater then or equal to arg2.
+			
+#####################################################################################################################
+
+Making Decision - The if statment
+
+if [ condition-is-true ]
+then
+	command 1
+	command 2
+	command n
+fi
+
+fi - if statement ends with fi
